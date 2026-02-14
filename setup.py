@@ -1,4 +1,4 @@
-"""Setup script for ragged_client package."""
+"""Setup script for lattice_sdk package."""
 
 from setuptools import setup, find_packages
 
@@ -6,13 +6,13 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="ragged_client",
+    name="lattice_sdk",
     version="0.1.0",
     author="Prisma ML Labs",
-    description="Ragged client library",
+    description="Lattice SDK library",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/prisma-ml-labs/ragged_client",
+    url="https://github.com/prisma-ml-labs/lattice_client",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 3 - Alpha",
