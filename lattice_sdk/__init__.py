@@ -8,7 +8,7 @@ from time import time
 
 import httpx
 
-DEFAULT_BASE_URL = os.getenv("LATTICE_BASE_URL", "http://lattice.prismalabs.xyz")
+DEFAULT_BASE_URL = os.getenv("LATTICE_BASE_URL", "https://lattice.prismalabs.xyz")
 
 
 @dataclass
@@ -16,7 +16,7 @@ class LatticeDB:
     api_key: str
     knowledge_base: str
     base_url: str
-    embedding_model: str | None = None
+    embedding_model: str | None = "prisma-embed",
     timeout: float = 30.0
 
     """
@@ -31,7 +31,8 @@ class LatticeDB:
 
     Embedding models:
     - ds1
-    - prisma-embed"""
+    - prisma-embed (default)
+    """
 
     def _request(self, method: str, path: str, **kwargs) -> dict:
         headers = kwargs.pop("headers", {})
