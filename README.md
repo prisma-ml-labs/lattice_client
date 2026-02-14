@@ -1,1 +1,3 @@
-# ragged_client
+# lattice sdk
+
+docs @ [https://www.prismalabs.xyz/docs/lattice/](https://www.prismalabs.xyz/docs/lattice/)
